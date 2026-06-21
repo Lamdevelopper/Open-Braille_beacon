@@ -1,20 +1,20 @@
-[stderr] INFO:     Started server process [15364]
+[stderr] INFO:     Started server process [46288]
 [stderr] INFO:     Waiting for application startup.
 [stderr] INFO:     Application startup complete.
 [stderr] INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
-INFO:     127.0.0.1:53438 - "GET /health HTTP/1.1" 200 OK
-[stderr] INFO:     ('127.0.0.1', 53440) - "WebSocket /ws" [accepted]
-[stderr] 2026-06-18 18:06:14 INFO     [codeboarding_pro.ws.server:226] WebSocket connected: session 3807792e-319b-4655-8f49-3254f89427ee
+INFO:     127.0.0.1:65192 - "GET /health HTTP/1.1" 200 OK
+[stderr] INFO:     ('127.0.0.1', 65193) - "WebSocket /ws" [accepted]
+[stderr] 2026-06-19 20:09:40 INFO     [codeboarding_pro.ws.server:258] WebSocket connected: session 67e742b3-7d0d-482b-bf8a-12b4ee7f0ad4
 [stderr] INFO:     connection open
-[stderr] 2026-06-18 18:06:15 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
-[stderr] 2026-06-18 18:06:16 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
-[stderr] 2026-06-18 18:06:17 INFO     [tool_registry.installers:451] Installing Node.js packages: ['pyright@1.1.400', 'typescript-language-server@4.3.4', 'typescript@5.7', 'intelephense@1.16.5']
-[stderr] 2026-06-18 18:06:20 INFO     [tool_registry.installers:465] Node.js packages installed successfully
-[stderr] 2026-06-18 18:06:20 INFO     [tool_registry.installers:225]   tokei: already installed, skipping
-[stderr] 2026-06-18 18:06:20 INFO     [tool_registry.installers:225]   gopls: already installed, skipping
-[stderr] 2026-06-18 18:06:20 INFO     [tool_registry.installers:225]   rust-analyzer: already installed, skipping
-[stderr] 2026-06-18 18:06:21 INFO     [tool_registry.installers:489] java already installed
-[stderr] 2026-06-18 18:06:21 WARNING  [tool_registry.installers:397]   csharp-ls: dotnet install failed (exit 2147516571): The command could not be loaded, possibly because:
+[stderr] 2026-06-19 20:09:40 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
+[stderr] 2026-06-19 20:09:40 INFO     [tool_registry.manifest:320] has_required_tools: csharp missing or stale at C:\Users\lamoy\.codeboarding\servers\bin\win\pm-tools\csharp-ls\csharp-ls.exe
+[stderr] 2026-06-19 20:09:41 INFO     [tool_registry.installers:451] Installing Node.js packages: ['pyright@1.1.400', 'typescript-language-server@4.3.4', 'typescript@5.7', 'intelephense@1.16.5']
+[stderr] 2026-06-19 20:09:42 INFO     [tool_registry.installers:465] Node.js packages installed successfully
+[stderr] 2026-06-19 20:09:42 INFO     [tool_registry.installers:225]   tokei: already installed, skipping
+[stderr] 2026-06-19 20:09:42 INFO     [tool_registry.installers:225]   gopls: already installed, skipping
+[stderr] 2026-06-19 20:09:42 INFO     [tool_registry.installers:225]   rust-analyzer: already installed, skipping
+[stderr] 2026-06-19 20:09:42 INFO     [tool_registry.installers:489] java already installed
+[stderr] 2026-06-19 20:09:42 WARNING  [tool_registry.installers:397]   csharp-ls: dotnet install failed (exit 2147516571): The command could not be loaded, possibly because:
 [stderr]   * You intended to execute a .NET application:
 [stderr]       The application 'tool' does not exist or is not a managed .dll or .exe.
 [stderr]   * You intended to execute a .NET SDK command:
@@ -26,34 +26,12 @@ INFO:     127.0.0.1:53438 - "GET /health HTTP/1.1" 200 OK
 [stderr] Learn about SDK resolution:
 [stderr] https://aka.ms/dotnet/sdk-not-found
 [stderr] 
-[stderr] 2026-06-18 18:06:21 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 1/3
-[stderr] 2026-06-18 18:06:21 INFO     [codeboarding_pro.session:185] Session 3807792e-319b-4655-8f49-3254f89427ee initialized: repo=C:\Users\lamoy\Desktop\proyectos_coding\braile-beacon, project=braile-beacon, output=C:\Users\lamoy\Desktop\proyectos_coding\braile-beacon\.codeboarding
-[stderr] 2026-06-18 18:06:23 WARNING  [codeboarding_pro.lsp.bootstrap:72] LSP startup attempt 1 failed: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
-[stderr] Traceback (most recent call last):
-[stderr]   File "codeboarding_pro\lsp\bootstrap.py", line 57, in _run
-[stderr]   File "static_analyzer\__init__.py", line 175, in __init__
-[stderr]   File "static_analyzer\scanner.py", line 30, in scan
-[stderr]   File "subprocess.py", line 548, in run
-[stderr]   File "subprocess.py", line 1026, in __init__
-[stderr]   File "subprocess.py", line 1538, in _execute_child
-[stderr] OSError: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
-[stderr] 2026-06-18 18:06:26 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 2/3
-[stderr] 2026-06-18 18:06:28 WARNING  [codeboarding_pro.lsp.bootstrap:72] LSP startup attempt 2 failed: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
-[stderr] Traceback (most recent call last):
-[stderr]   File "codeboarding_pro\lsp\bootstrap.py", line 57, in _run
-[stderr]   File "static_analyzer\__init__.py", line 175, in __init__
-[stderr]   File "static_analyzer\scanner.py", line 30, in scan
-[stderr]   File "subprocess.py", line 548, in run
-[stderr]   File "subprocess.py", line 1026, in __init__
-[stderr]   File "subprocess.py", line 1538, in _execute_child
-[stderr] OSError: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
-[stderr] 2026-06-18 18:06:31 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 3/3
-[stderr] 2026-06-18 18:06:33 WARNING  [codeboarding_pro.lsp.bootstrap:72] LSP startup attempt 3 failed: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
-[stderr] Traceback (most recent call last):
-[stderr]   File "codeboarding_pro\lsp\bootstrap.py", line 57, in _run
-[stderr]   File "static_analyzer\__init__.py", line 175, in __init__
-[stderr]   File "static_analyzer\scanner.py", line 30, in scan
-[stderr]   File "subprocess.py", line 548, in run
-[stderr]   File "subprocess.py", line 1026, in __init__
-[stderr]   File "subprocess.py", line 1538, in _execute_child
-[stderr] OSError: [WinError 4551] Una directiva de Control de aplicaciones bloque� este archivo
+[stderr] 2026-06-19 20:09:42 INFO     [codeboarding_pro.lsp.bootstrap:56] LSP startup attempt 1/3
+[stderr] 2026-06-19 20:09:42 INFO     [codeboarding_pro.session:187] Session 67e742b3-7d0d-482b-bf8a-12b4ee7f0ad4 initialized: repo=C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon, project=Braille_beacon, output=C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon\.codeboarding
+[stderr] 2026-06-19 20:09:43 INFO     [static_analyzer:227] Starting engine LSP client for Python at C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon
+[stderr] 2026-06-19 20:09:44 INFO     [static_analyzer:252] Python LSP start: 0.8s
+[stderr] 2026-06-19 20:09:44 INFO     [codeboarding_pro.file_monitor:106] FileMonitor started for C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon
+[stderr] 2026-06-19 20:09:44 INFO     [codeboarding_pro.session:205] Session 67e742b3-7d0d-482b-bf8a-12b4ee7f0ad4: FileMonitor activated
+[stderr] 2026-06-19 20:09:44 INFO     [codeboarding_pro.head_watcher:48] HeadWatcher started on C:\Users\lamoy\Desktop\proyectos_coding\Braille_beacon\.git\HEAD
+[stderr] 2026-06-19 20:09:44 INFO     [codeboarding_pro.session:250] Session 67e742b3-7d0d-482b-bf8a-12b4ee7f0ad4: LSP wiring complete
+[stderr] 2026-06-19 20:09:44 INFO     [codeboarding_pro.lsp.bootstrap:67] LSP clients started successfully (attempt 1)
