@@ -58,3 +58,13 @@ This is an **assistive location cue**, **not** certified indoor navigation. It m
 - A user's safety judgment
 
 BLE RSSI is approximate proximity only — it does not provide exact distance, direction, alignment, or obstacle detection.
+
+
+## ⚖️ Dual Licensing
+
+This project operates under a dual-licensing architecture to protect both the software logic and the physical design, ensuring the ecosystem remains open while permitting the commercial manufacturing of the physical devices.
+
+*   **Firmware & Software:** Licensed under the [GNU General Public License v3.0 (GPLv3)](./LICENSE). You are free to use, modify, and distribute the firmware, including for commercial purposes. However, any derivative works or larger systems incorporating this firmware must also be open-sourced under the same GPLv3 license.
+*   **Hardware (PCBs, CAD, 3D Models, Schematics):** Licensed under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)](./LICENSE-HARDWARE). You may manufacture, modify, and sell physical devices based on these designs. If you distribute modified hardware designs, you must release the updated CAD and schematics under the same CERN-OHL-S license.
+
+*Commercialization of the assembled physical product is fully permitted, provided that the source code and hardware design files remain open, and proper attribution to this original repository is maintained.*
