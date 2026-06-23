@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Skill(qc-helper)"
+      "Skill(qc-helper)",
+      "Agent(Explore)",
+      "Bash(curl *)",
+      "Bash(findstr *)"
     ]
   },
   "$version": 4

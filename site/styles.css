@@ -154,6 +154,12 @@ h2 span { color: var(--ink-muted); }
 .contribute-copy .button { margin-top: 1rem; }
 
 .site-footer { display: grid; grid-template-columns: 1fr 1.2fr auto; gap: 2rem; align-items: center; padding: 1.5rem var(--gutter); background: var(--night); border-top: 1px solid #4b4b4b; color: var(--mist); font-family: "IBM Plex Mono", monospace; font-size: .65rem; text-transform: uppercase; }
+.footer-center p { margin: 0; }
+.footer-center p a { color: var(--signal); text-decoration: none; }
+.footer-center p a:hover { text-decoration: underline; }
+.footer-legal { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: .5rem; }
+.footer-legal a { color: #fff; text-decoration: none; }
+.footer-legal a:hover { text-decoration: underline; text-underline-offset: .3rem; }
 .footer-brand { display: flex; align-items: center; gap: .6rem; color: #fff; font-family: Manrope, Arial, sans-serif; font-size: .85rem; font-weight: 800; text-transform: none; }
 .footer-logo { width: 30px; height: 30px; }
 .footer-logo img { position: absolute; width: 111px; max-width: none; transform: translate(-40px, -10px); }

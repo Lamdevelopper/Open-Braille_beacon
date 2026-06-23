@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Accessibility statement for the Open Braille Beacon website.">
+    <title>Accessibility — Open Braille Beacon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="legal.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Open Braille Beacon home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/brand-logo-sheet.webp" alt=""></span>
+        <span class="brand-name"><span>Open</span><span>Braille</span><span>Beacon</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html#system">System</a>
+        <a href="index.html#progress">Progress</a>
+        <a href="index.html#contribute">Contribute</a>
+        <a class="nav-github" href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="legal-page">
+      <h1>Accessibility Statement</h1>
+
+      <section>
+        <h2>Commitment</h2>
+        <p>Open Braille Beacon is an accessibility-focused project. We are committed to making this website as accessible as possible, targeting <strong>WCAG 2.2 Level AA</strong> compliance.</p>
+      </section>
+
+      <section>
+        <h2>Current accessibility features</h2>
+        <ul>
+          <li><strong>Skip link</strong> — a "Skip to content" link appears on focus, allowing keyboard users to bypass navigation.</li>
+          <li><strong>Keyboard navigation</strong> — all interactive elements are reachable and operable via keyboard.</li>
+          <li><strong>Visible focus indicators</strong> — a distinct green outline (3px solid) appears on focused elements for keyboard users.</li>
+          <li><strong>Reduced motion</strong> — scroll animations and reveal transitions are disabled for users who prefer reduced motion (respecting the <code>prefers-reduced-motion</code> media query).</li>
+          <li><strong>Semantic HTML</strong> — proper use of headings, landmarks (header, nav, main, section, footer), lists, and ARIA labels.</li>
+          <li><strong>ARIA attributes</strong> — navigation regions, expandable menus, and interactive elements use appropriate ARIA roles and labels.</li>
+          <li><strong>Font choices</strong> — Manrope and IBM Plex Mono are selected for readability and clear character distinction.</li>
+          <li><strong>Responsive design</strong> — the site adapts to mobile, tablet, and desktop screen sizes.</li>
+          <li><strong>Alt text on images</strong> — all concept renders and visual elements carry descriptive alt text.</li>
+          <li><strong>Color contrast</strong> — text and background combinations are designed to meet AA contrast ratios.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Known limitations</h2>
+        <ul>
+          <li><strong>Concept renders as images</strong> — the site presents concept visuals (device renders, CAD sheets, system diagrams) as images. Alt text describes the general content, but fine-grained visual detail (dimension annotations, internal architecture labels) cannot always be fully conveyed in text equivalents.</li>
+          <li><strong>Navigation anchors on legal pages</strong> — links to sections on the main page (index.html#system, etc.) require the main page to be loaded; anchor targets do not exist on legal pages themselves.</li>
+        </ul>
+        <p>We welcome suggestions for improving any of these limitations.</p>
+      </section>
+
+      <section>
+        <h2>Ongoing effort</h2>
+        <p>Accessibility is not a one-time checkbox. As the site and project evolve, we will continue to review and improve accessibility, including adding more detailed text alternatives for concept renders and testing with assistive technologies.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>If you encounter an accessibility barrier on this site, please report it through <a href="https://github.com/Lamdevelopper/Open-Braille_beacon/issues" target="_blank" rel="noreferrer">GitHub Issues</a>. We take accessibility reports seriously and will respond as promptly as possible.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="footer-logo" aria-hidden="true"><img src="assets/brand-logo-sheet.webp" alt=""></span>
+        <span>Open Braille Beacon</span>
+      </div>
+      <div class="footer-center">
+        <p>Open-source project: software under <a href="license.html">GPLv3</a>, hardware under <a href="license.html">CERN-OHL-S</a>. Not certified indoor navigation.</p>
+
+        <nav class="footer-legal" aria-label="Legal notices"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="license.html">License</a><a href="accessibility.html">Accessibility</a></nav>
+      </div>
+      <a href="https://github.com/Lamdevelopper/Open-Braille_beacon" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
